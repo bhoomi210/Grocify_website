@@ -6,12 +6,14 @@ import Dairy from "./component/Dairy";
 import SeaFood from "./component/SeaFood";
 import Layout from "./component/Layout";
 import AllProducts from "./component/AllProducts";
+import Errorpage from "./component/Errorpage";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
+      errorElement: <Errorpage />,
       children: [
         {
           path: "/",
@@ -26,7 +28,7 @@ const App = () => {
           element: <Dairy />,
         },
         {
-          path: "/SeaFood",
+          path: "/seaFood",
           element: <SeaFood />,
         },
         {
