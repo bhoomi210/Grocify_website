@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from './Heading'
 import { FaHeart, FaLeaf, FaSeedling, FaShieldAlt } from "react-icons/fa";
-import Basket from '../assets/Basket-full-vegetables.png'
+import basketImg from "../assets/basket-full-vegetables.png";
 
 
 const Values = () => {
@@ -48,7 +48,7 @@ const Values = () => {
                </div>
 
                <div className="md:flex w-1/2 hidden">
-                  <img src={Basket}/>
+                  <img src={basketImg}/>
                </div>
 
                {/* right value */}
